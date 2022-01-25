@@ -266,6 +266,27 @@ img {
 }
 
 
+    /*Форма в модальном окне*/
+    .form{
+        width: 448px;
+        outline: 1px tomato;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-field {
+        display: flex;
+        outline: 1px solid blue;
+
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+
+
+
+
+
     /*Features*/
 
     .feature.section {padding-bottom: 0;}

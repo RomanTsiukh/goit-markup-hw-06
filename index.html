@@ -58,7 +58,52 @@
 <!--Модальное окно-->
 
         <div class="backdrop is-hidden" data-modal>
+
             <div class="modal">
+                <form class="form">
+                    <div class="form-field">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Иван" 
+                        class="form-input" />
+                    </div>
+        
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel"/>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="mail">Почта</label>
+                        <input type="email" name="mail" id="mail"/>
+                    </div>
+
+                    <input type="checkbox" name="topic" value="js" id="js">
+                    <label for="js">Java</label>
+                    <input type="checkbox" name="topic" value="css" id="css">
+                    <label for="css">css</label>
+
+                    <input type="radio" name="experience" value="junior" id="junior">
+                    <label for="junior">junior</label>
+                    <input type="radio" name="experience" value="senior" id="senior">
+                    <label for="senior">senior</label>
+
+
+                    <label for="pdf">Загрузите файл</label>
+                    <input type="file" name="pdf" id="pdf">
+
+                    <textarea name="comennt" id="comennt" cols="30" rows="10"></textarea>
+                    <label for="comennt">Оставьте коментарий</label>
+
+                    <input type="checkbox" name="policy" id="policy">
+                    <label for="policy">Согласен на все</label>
+
+
+                    <button type="submit">Отправить</button>
+                    
+                </form>
                 <p></p>
                 <button class="modal-btn" data-modal-close>
                     <svg class="icon" width="30" height="30">
@@ -67,6 +112,11 @@
                 </button>
             </div>
         </div>
+
+
+
+
+
 
 <!--Преимущества (Features)-->
    <section class="feature section">
