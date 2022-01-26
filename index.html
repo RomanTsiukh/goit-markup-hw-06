@@ -61,12 +61,13 @@
 
             <div class="modal">
                 <form class="form">
+                    <p class="form-paragraph">Оставьте свои данные, мы вам перезвоним</p>
                     <div class="form-field">
                         <label for="name" class="form-label">Имя</label>
                         <input type="text" 
                         name="name" 
                         id="name" 
-                        placeholder="Иван" 
+                        placeholder="" 
                         class="form-input" />
                     </div>
         
@@ -80,6 +81,24 @@
                         <input type="email" name="mail" id="mail"/>
                     </div>
 
+
+                    <div class="form-field">
+                        <label for="comennt">Комментарий</label>
+                        <textarea name="comennt" id="comennt" cols="30" rows="10" placeholder="Введите текст" ></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="checkbox" name="policy" id="policy">
+                        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    </div>
+
+
+                    <button type="submit">Отправить</button>
+
+                    <br>
+
+
+                    <br>
                     <input type="checkbox" name="topic" value="js" id="js">
                     <label for="js">Java</label>
                     <input type="checkbox" name="topic" value="css" id="css">
@@ -93,15 +112,6 @@
 
                     <label for="pdf">Загрузите файл</label>
                     <input type="file" name="pdf" id="pdf">
-
-                    <textarea name="comennt" id="comennt" cols="30" rows="10"></textarea>
-                    <label for="comennt">Оставьте коментарий</label>
-
-                    <input type="checkbox" name="policy" id="policy">
-                    <label for="policy">Согласен на все</label>
-
-
-                    <button type="submit">Отправить</button>
                     
                 </form>
                 <p></p>
@@ -445,6 +455,10 @@
                     </li> 
                 </ul>
             </div> 
+            <div class="footer-form">
+                <label for="mail" class="footer-form-title">Подпишитесь на рассылку</label>
+                <input type="email" name="mail" id="mail"/>
+            </div>
         </div>           
    </footer>
    <script src="./js/modal.js"></script>
