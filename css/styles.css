@@ -298,6 +298,7 @@ img {
         line-height: 1.15;
         margin-top: 0;
         color: var(--title-text-color);
+        margin-bottom: 12px;
     }
 
     .form-field {
