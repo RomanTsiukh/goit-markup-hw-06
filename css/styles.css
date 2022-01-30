@@ -249,7 +249,7 @@ img {
     padding: 40px;
 
     width: 528px;
-    height: 581px;
+    min-height: 581px;
     background-color: var(--primary-white-color);
 
     visibility: visible;
@@ -317,7 +317,9 @@ img {
         flex-direction: column;
     }
 
-    .form-field:nth-child(-n+4){margin-bottom: 10px;}
+    .form-field:nth-child(-n+4){
+        margin-bottom: 10px;
+    }
     .form-field:nth-child(5){margin-bottom: 20px;}
 
     .form-field .form-input{
