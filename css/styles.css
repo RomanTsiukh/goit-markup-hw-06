@@ -246,8 +246,10 @@ img {
     top: 50%;
     left: 50%;
 
+    padding: 40px;
+
     width: 528px;
-    min-height: 581px;
+    height: 581px;
     background-color: var(--primary-white-color);
 
     visibility: visible;
@@ -261,6 +263,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     right: 8px;
     top: 8px;
@@ -272,9 +275,13 @@ img {
     box-sizing: border-box;
 
     background: none;
-
 } 
 
+    .modal-icon-close{transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+    .modal-btn-close:hover .modal-icon-close{
+        fill: var(--accent-color);
+    }
 
     /*Форма в модальном окне*/
 
@@ -288,7 +295,7 @@ img {
         outline: 1px tomato;
         margin-left: auto;
         margin-right: auto;
-        padding: 40px;
+        /* padding: 40px; */
     }
 
     .form-paragraph{
@@ -306,12 +313,14 @@ img {
         display: flex;
         /*outline: 1px solid blue;*/
 
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         flex-direction: column;
-
     }
 
-    .form-field input{
+    .form-field:nth-child(-n+4){margin-bottom: 10px;}
+    .form-field:nth-child(5){margin-bottom: 20px;}
+
+    .form-field .form-input{
         margin: 0;
         padding: 11px 42px;
 
@@ -375,15 +384,22 @@ img {
         border: 1px solid #2196F3;
     }
 
-    .form-field:focus-within > .form-icon{
-        fill: #2196F3;
+    .form-field:focus-within > .form-icon{fill: #2196F3;}
+
+    .form-input-comment {
+        height: 120px;
+
+        margin: 0;
+        padding: 12px 16px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        /* box-sizing: border-box; */
+        border-radius: 4px;
+        outline: none;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .form-icon-check {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+    .form-input-comment:focus, .form-input-comment:not(:placeholder-shown){border: 1px solid #2196F3;}
 
     /*Cоглашаюсь с рассылкой*/
 
@@ -435,6 +451,11 @@ img {
         color: var(--accent-color);
     }  */
  
+    .form-icon-check {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
     .form-field-checkbox{
         position: relative;
@@ -442,8 +463,9 @@ img {
         align-items: center;
 
         /*outline: 1px solid blue;*/
-        margin-top: 20px;
-        margin-left: 14px;
+
+        max-width: 425px; 
+        margin: 0 auto;
     }
 
     .form-checkbox {
@@ -953,6 +975,7 @@ img {
             display: flex;
             flex-direction: row;
             align-items: center;
+            margin-top: 20px;
          }
 
     .footer-form-icon {margin-left: 10px;}
